@@ -1,113 +1,140 @@
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .email_tem_footer ul li{
-        margin: 10px;
-        list-style: none;
-        cursor: pointer;
-        padding-top: 30px;
-        padding-bottom: 15%;
-    }
-    .resize{
-        font-size: 70px;
-    }
-    .price_tag{
-        border-bottom: -5px;
-    }
-    /* .price_tag{
-     text-decoration: strick;
-    } */
- @media (max-width: 480px) {
 
-    .email_template .template_body h6{
-        font-size: 16px !important;
-    }
-    .email_template .template_body h1{
-        font-size: 30px !important;
-    }
-    .email_template .template_body p{
-        font-size: 18px !important;
-    }
-    .email_template .template_body h2{
-        font-size: 22px !important;
-    }
-    .email_template .template_body button{
-        font-size: 20px !important;
-    }
-    .email_template .template_body h3{
-        font-size: 20px !important;
-    }
-    .breakpoint_adjust{
-        padding-top: 20px !important ;
-    }
-    span{
-        font-size: 20px !important;
-    }
-    .resize{
-        font-size: 40px !important;
-    }
-    .email_tem_footer ul li img{
-        height: 30px;
-    }
-}
-</style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<body>
-    <div class="email_template"
-        style="max-width: 600px;background-color: #080b94; align-items: center; justify-content: center; margin: 30px auto;">
-        <div class="tamplate_img">
-            <figure><img src="img/headimg.jpg" style=" width: 100%;"></figure>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+    <!-- =========== css start =========== -->
+   <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+         font-family: 'Roboto Condensed', sans-serif;
+       
+     }
+     body{
+        background-image: linear-gradient(45deg,  #fc7a1f, #fd7d21 );
+     }
+
+     .head_line .text_inner{
+         border-radius: 10%;
+         border: 1px solid #888888;
+         box-shadow:0  0px 10px 1px #888888;
+         width: 100%;
+         max-width: 500px;
+         margin:50px auto;
+     }
+     .card{
+         border-top-left-radius: 20%;
+         border-top-right-radius: 20%;
+         border-color: #fc7a1f;
+         box-shadow:0  0px 10px 1px #888888;
+         background-image: linear-gradient(180deg, white, #888888);
+         transition: 0.8s !important;
+     }
+
+
+     .img_addjust{
+         border-radius: 50%;
+         border: 1px solid black;
+         box-shadow:0  10px 10px 8px #888888;
+         width: 60%;
+         margin: 30px auto;
+         overflow: hidden;
+         height: 100%;
+        height: 100%;
+         /* =========set maximun height of img========= */
+         max-height: 200px;
+     }
+     .btn_addjust{
+         color: ivory;
+        background-color: orangered;
+         outline:none !important;
+         box-shadow:0  0px 10px 1px #888888;
+        transition: 0.5s !important;
+        border-radius: 10px;
+     }
+     .btn_addjust:hover{
+        background-color: orange !important;
+     }
+     .titel_color{
+         color: orangered;
+     }
+ 
+   </style>
+    <!-- =========== css end =========== --> 
+  </head>
+  <body>
+   
+<!-- =================box card start =================== -->
+
+
+<div class="head_line text-uppercase text-center">
+    <div class="text_inner">
+    <h1 class="mt-2">our team members</h1>
+    <p>meet our team !</p>
+</div>
+</div>
+
+
+
+<div class="container pb-5">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card text-center text-capitalize">
+        <img src="https://www.diethelmtravel.com/wp-content/uploads/2016/04/bill-gates-wealthiest-person-279x300.jpg" class="card-img-top img-fluid img_addjust" alt="...">
+        <div class="card-body">
+          <h5 class="card-title titel_color py-2">sudhansu gupta</h5>
+          <h6 class="card-subtitle mb-2 text-muted pb-5">CEO/DIRCTOR</h6>
+          <a href="details_ceo.html" class="btn_addjust btn w-100  btn-outline-danger">know more</a>
         </div>
-
-        <div class="template_body" style="justify-content: center; align-items: center; text-align: center;">
-            <h6 style="color: white;font-size: 20px; padding-top: 20px;">lightup those fireworks</h6>
-            <h1 style="color: red;font-size: 50px; padding-top: 30px; font-weight: 700;">IT'S OUR<br>9TH OF JUN SALE!
-            </h1>
-
-            <h1 style="color: white;font-size: 50px; padding-top: 30px; font-weight: 700;">TAKE $50 OFF</h1>
-            <p  style="color: white;font-size: 30px; padding-top: 20px; font-weight: 100;">ANNUAL PREMIUMPLUS MEMBERSHIPS
-            </p>
-            <h2 style="color: white;font-size: 30px; padding-top: 20px; font-weight: 200; "> <span class="price_tag" style=" margin-right: 10px; "><strike>$199.9</strike></span> <span
-                    style="color: red;font-size: 30px; padding-top: 20px; font-weight: 200;"> $149.98</span></h2>
-            <!-- button sec -->
-            <div class="btn_part"
-                style="display: flex; text-align: center; justify-content: center; padding-top: 50px;">
-                <h3 style="color: white;font-size: 30px; margin-top: 3px; margin-right: 20px; font-weight: 200;">USE CODE</h3>
-                <a href="#"><button
-                        style="color: black;font-size: 30px; padding: 2% 4%; font-weight: 200;">JUNJF500</button></a>
+      </div>
+    </div>
+    <div class="col">
+        <div class="card text-center text-capitalize">
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-person-512.png" class="card-img-top img-fluid img_addjust" alt="...">
+            <div class="card-body">
+              <h5 class="card-title titel_color py-2">sudhansu gupta</h5>
+              <h6 class="card-subtitle mb-2 text-muted pb-5">CEO/DIRCTOR</h6>
+              <a href="details_ceo.html" class="btn_addjust btn w-100  btn-outline-danger">know more</a>
             </div>
-            <!-- button sec -->
-         <p class="breakpoint_adjust" style="color: white;font-size: 30px; padding-top: 30px; font-weight: 300;">Unlimited Headshots<span class="resize">.</span>Unlimited Videos </p>
-         <p style="color: white;font-size: 30px; padding-top: 0px; font-weight: 300;">Unlimited Submissions<span class="resize">.</span>much more </p>
-         <a href="#"><button style="color: white;font-size: 40px; padding: 2% 3%;margin-top: 50px; margin-bottom: 25%; outline: none; border: none; background-color: red; font-weight: 300; border-radius: 10px;">UPGRADE NOW</button></a>
-        </div>
-        <div class="template_style " style="border-top: 6px solid red;"></div>
-        <div class="template_style " style="border-top: 6px solid white;padding-bottom: 6%;">
-        </div>
-
-        <!-- footer -->
-        <div class="email_tem_footer" style="background-color: rgb(105, 96, 230); justify-content: center; align-items: center; text-align: center ;margin:0 auto;padding-top: 30px;">
-            <div class="logo" style="color: white;">logo</div>
-
-            <ul style="display: flex;text-align: center; align-items: center; justify-content: center;">
-                <li><a href="#"><figure><img src="img/icon_facebook_1y.png"></figure></a></li>
-                <li><a href="#"><figure><img src="img/icon_twitter.png"></figure></a></li>
-                <li><a href="#"><figure><img src="img/icon_instra.png"></figure></a></li>
-                <li><a href="#"><figure><img src="img/icon_last.png"></figure></a></li>
-            </ul>
-
-        </div>
-
+          </div>
+    </div>
+    <div class="col">
+        <div class="card text-center text-capitalize">
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-person-512.png" class="card-img-top img-fluid img_addjust" alt="...">
+            <div class="card-body">
+              <h5 class="card-title titel_color py-2">sudhansu gupta</h5>
+              <h6 class="card-subtitle mb-2 text-muted pb-5">CEO/DIRCTOR</h6>
+              <a href="details_ceo.html" class="btn_addjust btn w-100  btn-outline-danger">know more</a>
+            </div>
+          </div>
+    </div>
   </div>
-</body>
+  </div>
+
+
+
+
+
+<!-- =================box card end =================== -->
+   
+
+ 
+
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
